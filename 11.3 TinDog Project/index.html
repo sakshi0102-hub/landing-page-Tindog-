@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinDog - Find Your Dog's Match</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+    }
+    .navbar {
+      background: linear-gradient(to right, #ff5733, #c70039);
+    }
+    .navbar-brand {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .navbar-nav .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #fff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffe6e6;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    .btn-custom {
+      background-color: #ff5733;
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #c70039;
+    }
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.75rem;
+    }
+    .bg-body-secondary {
+      background-color: #ffe6e6;
+    }
+    .text-body-emphasis {
+      color: #900C3F;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+    }
+    .hero {
+      background: url('./images/puppy1.jpeg') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      color: #ff5733;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #ffe6e6;
+    }
+    .pattern {
+      background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    }
+    .testimonials img {
+      border: 5px solid #ff5733;
+    }
+    .testimonial-box {
+      border: 2px solid #ff5733;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff3f3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TinDog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center py-5">
+    <div class="container">
+      <h1 class="display-4">TinDog</h1>
+      <p class="lead">Find the perfect match for your furry friend.</p>
+      <button type="button" class="btn btn-custom btn-lg">Download</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="container py-5">
+    <h2 class="pb-2 border-bottom">Features</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-balloon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 16a2.5 2.5 0 0 0 1.405-4.59c.198-.147.39-.314.574-.5.827-.847 1.521-2.08 1.521-3.41C11.5 4.042 9.985 2 8 2S4.5 4.042 4.5 7.5c0 1.33.694 2.563 1.521 3.41.183.186.376.353.574.5A2.5 2.5 0 0 0 8 16ZM6.154 11.73c-.18-.127-.347-.276-.497-.437C4.77 10.504 4 9.138 4 7.5 4 4.958 5.49 3 8 3s4 1.958 4 4.5c0 1.638-.77 3.004-1.657 3.793-.15.161-.317.31-.497.437A2.5 2.5 0 0 0 8 15a2.5 2.5 0 0 0-1.846-3.27ZM6.5 15a.5.5 0 0 1 .5.5c0 .172.02.31.055.428.039.127.094.232.16.311.134.16.332.261.785.261s.65-.1.785-.261a.718.718 0 0 0 .16-.31A1.552 1.552 0 0 0 9 15.5a.5.5 0 0 1 1 0c0 .24-.03.529-.145.811a1.717 1.717 0 0 1-.604.75C9.003 17.319 8.557 17.5 8 17.5s-1.003-.181-1.251-.439a1.717 1.717 0 0 1-.604-.75C6.03 15.97 6 15.68 6 15.5a.5.5 0 0 1 .5-.5Z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Matchmaking</h3>
+          <p>Find the perfect match for your dog in your locality.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="M8 2c1.655-1.14 4-1.01 5.66.9 1.68 1.936 2.022 5.046 1.024 7.454L8 15l-6.684-4.646c-.98-2.407-.67-5.489 1.023-7.427C4.013.99 6.348.86 8 2ZM8 0C5.243-1.14 2.418-.415 1.016 2.559-.487 5.552-.206 8.835 1.688 11.682 3.585 14.542 6.733 15.83 8 15.83c1.384 0 4.691-1.293 6.716-4.245 1.995-2.853 2.073-5.645.682-7.597C10.751-.226 8.647-.68 8 0Z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Favorites</h3>
+          <p>Save your favorite matches for easy access.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+            <path d="M1.5 0a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V.5A.5.5 0 0 1 .5 0h1Zm6 1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 4 1h4Zm2 4a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 6 5h6Zm2 4a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1Zm-5-7h1V1h-1v1Zm0 4h1V5h-1v1Zm0 4h1V9h-1v1Zm-2-5h1V3H6v1Zm0 4h1V7H6v1Zm0 4h1v-1H6v1Zm5-5h1V7h-1v1Zm0 4h1v-1h-1v1Zm0-7h1V4h-1v1Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Chat</h3>
+          <p>Communicate directly with potential matches.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M8 0a4 4 0 0 0-4 4c0 1.8 1.153 4.707 2.92 7.866.244.405.38.61.755.934l.064.06.072.065a.69.69 0 0 0 .088.076l.1.09c.045.046.09.09.135.134.043.042.088.084.134.125.033.033.07.068.107.1.145.144.292.285.447.408.034.023.066.047.098.07a4.502 4.502 0 0 0 5.68-1.238 4.502 4.502 0 0 0 1.091-2.74V4a4 4 0 0 0-4-4Zm.5 7a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5ZM8 14a3.99 3.99 0 0 1-2.5-.895c.31-.344.609-.705.866-1.09.05-.086.095-.181.145-.267.206-.382.414-.761.633-1.142A7.998 7.998 0 0 0 8 4a3.5 3.5 0 0 1 3.5 3.5v4a3.5 3.5 0 0 1-2.305 3.35c-.212.142-.434.25-.68.335a3.99 3.99 0 0 1-1.255.189ZM8 1a3 3 0 0 0-3 3v3a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5v-3a3 3 0 0 1 3-3Zm0 6a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5Z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Location-Based</h3>
+          <p>Find matches based on your location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container py-5">
+    <h2 class="pb-2 border-bottom">Testimonials</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 p-1">
+      <div class="col">
+        <div class="testimonial-box p-4">
+          <p>"I love how customizable the features are. From matchmaking to community forums, TinDog covers it all. The site’s layout is easy to understand and visually pleasing. It’s evident that a lot of thought went into its design."</p>
+          <class="">~Sakshi</class>
+        </div>
+      </div>
+      <div class="col">
+        <div class="testimonial-box p-4">
+          <p> "The community aspect of TinDog is fantastic! I've met so many other dog lovers and shared tips and experiences. The site’s design is also very appealing and the functionality is top-notch. My dog and I are both happy!"</p>
+          <class="">~Bhumi</class>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4 p-1">
+      <div class="col">
+        <div class="testimonial-box p-4">
+          <p>"TinDog made finding a playmate for my dog a breeze. The matchmaking feature is so intuitive and user-friendly. I love the health tracking updates too. Highly recommend for any dog owner looking to enhance their pet’s social life!"</p>
+          <class="">~Anita</class>
+        </div>
+      </div>
+      <div class="col">
+        <div class="testimonial-box p-4">
+          <p>"I was impressed by how easy it was to navigate through the TinDog website. The event planning feature has helped me organize playdates effortlessly. The design is clean and the features are practical. Great job on this app!"</p>
+          <class="">~Ram</class>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3">
+    <div class="container text-center">
+      <p>&copy; 2024 TinDog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
